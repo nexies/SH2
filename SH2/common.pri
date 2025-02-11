@@ -1,0 +1,24 @@
+#CONFIG += release
+CONFIG += debug
+
+VERSION_MAJOR = 1
+VERSION_MINOR = 1
+VERSION_BUILD = 1
+
+VERSION = $${VERSION_MAJOR}.$${VERSION_MINOR}
+DEFINES += APP_VERSION=$$VERSION
+
+BUILD_DIR = ../..
+COMPONENTS_PATH = $$PWD/components
+message(components path: $$COMPONENTS_PATH)
+
+LIBSDIR = $${BUILD_DIR}/lib
+DESTDIR = $${BUILD_DIR}/lib
+
+DESTDIR = ../../lib
+MOC_DIR = moc
+OBJECTS_DIR = obj
+UI_DIR = ui
+
+
+NEXIEBASEDIR = NexieBase

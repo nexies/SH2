@@ -1,0 +1,1200 @@
+<smart_house>
+    <net_RS sendSocket="30001" recieveSocket="30011" Master="master" name="RS485-1" type="RS485" ip="192.168.127.254">
+        <definition> RS-485 net </definition>
+        <device_RS rs485_delay_timeout="" box="OUT_11" parity="" name="ЩР-12 (Центральный щит. Прихожая). Контроллер вывода" base_address="16*2" noise_filter="" wordLen="" net_max_timeout="" stop_bit="" type="" net_address_len="" ver="" protocol="" baudRate="">
+            <contact emergency="0" id="OUT_RS_1_11_01 (свет в прихожей)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_02 (чердак. передний двор)" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_03  (свет в гардеробе)" shift="03" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_1_11_04 (балкон)" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_09 (Фасад правая сторона)" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_10 (Фасад левая сторона)" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_11 (Светильник главный вход)" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_11_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_12" parity="no" name="ЩР-12 (Центральный щит. Прихожая). Контроллер ввода" base_address="16*2+1" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> main box first floor key-controller </definition>
+            <key id="IN_RS_1_12_01 (Свет на крыльце)" shift="01" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_02 (Свет в прихожей)" shift="02" name="" counter="19" state="0"/>
+            <key id="IN_RS_1_12_03" shift="03" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_04 (Свет в гардеробе)" shift="04" name="" counter="19" state="0"/>
+            <key id="IN_RS_1_12_05" shift="05" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_06 (Гардероб)" shift="06" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_07 (Прихожая)" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_08 (Выключить все)" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_09 (Свет в холле 1 этажа)" shift="09" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_10" shift="10" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_11 (Свет в прихожей из коридора)" shift="11" name="" counter="3" state="0"/>
+            <key id="IN_RS_1_12_12 (Свет в гардеробе из коридора)" shift="12" name="" counter="3" state="0"/>
+            <key id="IN_RS_1_12_13" shift="13" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_14" shift="14" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_15" shift="15" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_12_16" shift="16" name="" counter="0" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_13" parity="no" name="ЩР-13 (Гостиная слева). Контроллер ввода" base_address="16*3" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> living room left box key-controller </definition>
+            <key id="IN_RS_1_13_01 (Гостиная, освещение над столом)" shift="01" name="" counter="100" state="0"/>
+            <key id="IN_RS_1_13_02 " shift="02" name="" counter="100" state="0"/>
+            <key id="IN_RS_1_13_03 (Гостиная, освещение кухня)" shift="03" name="" counter="71" state="0"/>
+            <key id="IN_RS_1_13_04" shift="04" name="" counter="71" state="0"/>
+            <key id="IN_RS_1_13_05 (Кухня над столешницей, правый)" shift="05" name="" counter="253" state="0"/>
+            <key id="IN_RS_1_13_06 (Кухня над столешницей, левый)" shift="06" name="" counter="123" state="0"/>
+            <key id="IN_RS_1_13_07" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_13_08" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_13_09 (Гостиная, свет верхний, слева)" shift="09" name="" counter="1474" state="0"/>
+            <key id="IN_RS_1_13_10 (Гостиная, свет верхний, справа)" shift="10" name="" counter="1635" state="0"/>
+            <key id="IN_RS_1_13_11 (Гостиная, освещение стена)" shift="11" name="" counter="1309" state="0"/>
+            <key id="IN_RS_1_13_12 (Гостиная, свет над столом)" shift="12" name="" counter="808" state="0"/>
+            <key id="IN_RS_1_13_13 (Гостиная, подсветка кухни)" shift="13" name="" counter="1185" state="0"/>
+            <key id="IN_RS_1_13_14 (Гостиная, подсветка ниш)" shift="14" name="" counter="798" state="0"/>
+            <key id="IN_RS_1_13_15 " shift="15" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_13_16 " shift="16" name="" counter="0" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_14" parity="no" name="ЩР-14 (Гостиная справа). Контроллер вывода" base_address="16*4" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_1_14_01(холл 1 этажа)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="1" id="OUT_RS_1_14_03 (над столом)" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_04 " shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="1" id="OUT_RS_1_14_05 (гостиная потолок слева)" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="1" id="OUT_RS_1_14_06 (гостиная потолок справа)" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_07 (гостиная подсветка кухни)" shift="07" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_1_14_08 (освещение лестница)" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_09 (освещение внутренний двор)" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_10 (освещение лестничная площадка)" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_11 (гостиная стена кирпичная)" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_12 (Подсветка ниш)" shift="12" name="" pwm="2" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_13 (гостиная стена штукатурная)" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_14 (кладовка)" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_14_15" shift="15" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_1_14_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_14" parity="no" name="ЩР-14 (Гостиная справа). Контроллер ввода" base_address="16*5" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> living rigth box key-controller </definition>
+            <key id="IN_RS_1_14_01 (Лестница, 1-2 этаж)" shift="01" name="" counter="41" state="0"/>
+            <key id="IN_RS_1_14_02 (Задний двор)" shift="02" name="" counter="55" state="0"/>
+            <key id="IN_RS_1_14_03 (Кладовая)" shift="03" name="" counter="1702" state="0"/>
+            <key id="IN_RS_1_14_04 (Выход на террасу)" shift="04" name="" counter="132" state="0"/>
+            <key id="IN_RS_1_14_05 (Гостиная, освещение стен)" shift="05" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_14_06 (Лестница 2-3 этаж)" shift="06" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_14_07 (Холл 1 этажа, освещение верхнее)" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_14_08 (Лестница 1-2 этаж, светодиодная подсветка)" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_14_09 (Лестница 2-3 этаж, светодиодная подсветка)" shift="09" name="" counter="8" state="0"/>
+            <key id="IN_RS_1_14_10" shift="10" name="" counter="9" state="0"/>
+            <key id="IN_RS_1_14_11 (Освещение лестничной площадки)" shift="11" name="" counter="14" state="0"/>
+            <key id="IN_RS_1_14_12 (Холл 1 этажа от лестницы)" shift="12" name="" counter="20" state="0"/>
+            <key id="IN_RS_1_14_13" shift="13" name="" counter="20" state="0"/>
+            <key id="IN_RS_1_14_14 (Освещение лестницы)" shift="14" name="" counter="8" state="0"/>
+            <key id="IN_RS_1_14_15 (Кладовая)" shift="15" name="" counter="111" state="0"/>
+            <key id="IN_RS_1_14_16 (Кладовая)" shift="16" name="" counter="111" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_15" parity="no" name="ЩР-15 (Комната отдыха). Контроллер ввода" base_address="16*8" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> sauna box key-controller </definition>
+            <key id="IN_RS_1_15_01 (С/У 1 этажа, свет)" shift="01" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_15_02 (С/У 1 этажа, вентиляция)" shift="02" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_15_03" shift="03" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_15_04" shift="04" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_15_05 (Котельная, свет)" shift="05" name="" counter="3089" state="0"/>
+            <key id="IN_RS_1_15_06 (Сауна, нижнее освещение)" shift="06" name="" counter="2506" state="0"/>
+            <key id="IN_RS_1_15_07 (Сауна, верхнее освещение)" shift="07" name="" counter="3557" state="0"/>
+            <key id="IN_RS_1_15_08 (Предбанник, свет)" shift="08" name="" counter="1970" state="0"/>
+            <key id="IN_RS_1_15_09 (Туалет 1 этажа)" shift="09" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_15_10 (Туалет 1 этажа, свет)" shift="10" name="" counter="20888" state="0"/>
+            <key id="IN_RS_1_15_11 (Туалет 1 этажа)" shift="11" name="" counter="711" state="0"/>
+            <key id="IN_RS_1_15_12 (Туалет 1 этажа)" shift="12" name="" counter="711" state="0"/>
+            <key id="IN_RS_1_15_13 (Комната отдыха, вентиляция)" shift="13" name="" counter="2700" state="0"/>
+            <key id="IN_RS_1_15_14 (Комната отдыха, свет)" shift="14" name="" counter="8483" state="0"/>
+            <key id="IN_RS_1_15_15 (Душ, свет)" shift="15" name="" counter="9593" state="0"/>
+            <key id="IN_RS_1_15_16 (Душ, вентиляция)" shift="16" name="" counter="2195" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_15" parity="no" name="ЩР-15 (Комната отдыха). Контроллер вывода" base_address="16*7" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_1_15_01 (вентилятор душ)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_03 (душевая свет)" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_04 (комната отдыха свет)" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_06 (освещение сауны нижнее)" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_07 (освещение сауны верхнее)" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_08 (освещение котельной)" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_09 (вентиляция комната отдыха)" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_11 (свет в туалете)" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_12 (освещение коридор)" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_13 (освещение террасы)" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_15_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_16" parity="no" name="ЩР-16 (Музыкальная студия). Контроллер ввода" base_address="16*6" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> music studia box key-controller </definition>
+            <key id="IN_RS_1_16_01 (Музыкальная комната, верхний свет)" shift="01" name="" counter="157" state="0"/>
+            <key id="IN_RS_1_16_02 (Музыкальная комната, сцена)" shift="02" name="" counter="379" state="0"/>
+            <key id="IN_RS_1_16_03 (Музыкальная комната, проектор)" shift="03" name="" counter="40" state="0"/>
+            <key id="IN_RS_1_16_04 (Кладовка)" shift="04" name="" counter="7" state="0"/>
+            <key id="IN_RS_1_16_05" shift="05" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_16_06" shift="06" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_16_07" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_16_08" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_16_09" shift="09" name="" counter="155" state="0"/>
+            <key id="IN_RS_1_16_10" shift="10" name="" counter="376" state="0"/>
+            <key id="IN_RS_1_16_11" shift="11" name="" counter="198" state="0"/>
+            <key id="IN_RS_1_16_12" shift="12" name="" counter="189" state="0"/>
+            <key id="IN_RS_1_16_13" shift="13" name="" counter="189" state="0"/>
+            <key id="IN_RS_1_16_14" shift="14" name="" counter="179" state="0"/>
+            <key id="IN_RS_1_16_15" shift="15" name="" counter="2" state="0"/>
+            <key id="IN_RS_1_16_16" shift="16" name="" counter="2" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_16" parity="no" name="ЩР-16 (Музыкальная студия). Контроллер вывода" base_address="16*6+1" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_1_16_01 (освещение над сценой)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_02 (освещение в зрительном зале)" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_03 (проектор)" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_04 " shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_05 (фронтальное освещение сцены)" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_1_16_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_21" parity="no" name="ЩР-21 (Центральный щит 2-этажа). Контроллер ввода" base_address="16*7+1" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="none" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> main box second floor key-controller </definition>
+            <key id="IN_RS_1_21_01" shift="01" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_02" shift="02" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_03" shift="03" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_04" shift="04" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_05" shift="05" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_06" shift="06" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_07" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_08" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_09" shift="09" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_10" shift="10" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_11" shift="11" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_12" shift="12" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_13" shift="13" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_14" shift="14" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_15" shift="15" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_21_16" shift="16" name="" counter="0" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_22" parity="no" name="ЩР-22 (Степина комната). Контроллер вывода" base_address="16*9" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_22_01 (Степина комната, карта)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_03" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_04 (Катина комната)" shift="04" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_22_05 (Холл 2 этаж, доска)" shift="05" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_22_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_09 (Степина комната)" shift="09" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_22_09 поломка" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_10 (Холл 2 этажа стена)" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_11 (Гришина комната потолок)" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_12 (холл 2 этаж потолок)" shift="13" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_22_13 (Гришина комната, подсветка гитар)" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_14" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_22_15" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_23" parity="no" name="ЩР-23 (Степина комната). Контроллер ввода" base_address="16*10" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> yana room box key-controller </definition>
+            <key id="IN_RS_1_23_01 (Катина комната, верхний свет)" shift="01" name="" counter="4609" state="0"/>
+            <key id="IN_RS_1_23_02 (Катина комната, боковой свет)" shift="02" name="" counter="281" state="0"/>
+            <key id="IN_RS_1_23_03 " shift="03" name="" counter="4609" state="0"/>
+            <key id="IN_RS_1_23_04 (Степина комната, боковой свет)" shift="04" name="" counter="282" state="0"/>
+            <key id="IN_RS_1_23_05 (Степина комната, карта)" shift="05" name="" counter="2322" state="0"/>
+            <key id="IN_RS_1_23_06 (Степина комната, верхний свет)" shift="06" name="" counter="3161" state="0"/>
+            <key id="IN_RS_1_23_07 (Выход на балкон, свет)" shift="07" name="" counter="2343" state="0"/>
+            <key id="IN_RS_1_23_08 (Лестница 2-3 этаж)" shift="08" name="" counter="3160" state="0"/>
+            <key id="IN_RS_1_23_09 (Холл 2 этажа, освещение верхнее)" shift="09" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_10" shift="10" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_11" shift="11" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_12" shift="12" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_13" shift="13" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_14" shift="14" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_15" shift="15" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_23_16" shift="16" name="" counter="0" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_24" parity="no" name="ЩР-24 (Гришина комната). Контроллер ввода" base_address="16*11" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> guest room box key-controller </definition>
+            <key id="IN_RS_1_24_01 (Гришина комната, верхний свет)" shift="01" name="" counter="3060" state="0"/>
+            <key id="IN_RS_1_24_02 (Гришина комната, подсветка гитар)" shift="02" name="" counter="3221" state="0"/>
+            <key id="IN_RS_1_24_03" shift="03" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_24_04" shift="04" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_24_05 (Холл 2 этаж, доска)" shift="05" name="" counter="2893" state="0"/>
+            <key id="IN_RS_1_24_06 (Холл 2 этаж, подсветка стен)" shift="06" name="" counter="2120" state="0"/>
+            <key id="IN_RS_1_24_07 (Холл 2 этажа, верхний свет)" shift="07" name="" counter="2098" state="0"/>
+            <key id="IN_RS_1_24_08" shift="08" name="" counter="1177" state="0"/>
+            <key id="IN_RS_1_24_09" shift="09" name="" counter="13" state="0"/>
+            <key id="IN_RS_1_24_10" shift="10" name="" counter="13" state="0"/>
+            <key id="IN_RS_1_24_11" shift="11" name="" counter="12" state="0"/>
+            <key id="IN_RS_1_24_12" shift="12" name="" counter="11" state="0"/>
+            <key id="IN_RS_1_24_13" shift="13" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_24_14" shift="14" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_24_15" shift="15" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_24_16" shift="16" name="" counter="0" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_25" parity="no" name="ЩР-25 (Гостевая комната). Контроллер ввода" base_address="16*12" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> stepa room box key-controller </definition>
+            <key id="IN_RS_1_25_01 " shift="01" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_02 (Гостевая ванная комната, 2 этаж, вентиляция)" shift="02" name="" counter="277" state="0"/>
+            <key id="IN_RS_1_25_03 (Гостевая ванная комната, 2 этаж, свет)" shift="03" name="" counter="1789" state="0"/>
+            <key id="IN_RS_1_25_04 " shift="04" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_05" shift="05" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_06 (Гостевая комната, боковой свет)" shift="06" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_07" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_08" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_09 (Гостевая комната, боковой свет)" shift="09" name="" counter="596" state="0"/>
+            <key id="IN_RS_1_25_10 (Гостевая комната, верхний свет)" shift="10" name="" counter="1142" state="0"/>
+            <key id="IN_RS_1_25_11" shift="11" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_12" shift="12" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_25_13 (Малый С/У, 2 этаж, свет)" shift="13" name="" counter="4818" state="0"/>
+            <key id="IN_RS_1_25_14" shift="14" name="" counter="208" state="0"/>
+            <key id="IN_RS_1_25_15" shift="15" name="" counter="4816" state="0"/>
+            <key id="IN_RS_1_25_16" shift="16" name="" counter="208" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_26" parity="no" name="ЩР-26 (Спальня комната). Контроллер ввода" base_address="16*13" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MV110-16D" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> grisha room box key-controller </definition>
+            <key id="IN_RS_1_26_01" shift="01" name="" counter="112" state="0"/>
+            <key id="IN_RS_1_26_02 (Спальня, верхний свет)" shift="02" name="" counter="1342" state="0"/>
+            <key id="IN_RS_1_26_03" shift="03" name="" counter="1342" state="0"/>
+            <key id="IN_RS_1_26_04" shift="04" name="" counter="111" state="0"/>
+            <key id="IN_RS_1_26_05 (Большой С/У, верхний свет)" shift="05" name="" counter="1264" state="0"/>
+            <key id="IN_RS_1_26_06 (Большой С/У, боковая подсветка)" shift="06" name="" counter="615" state="0"/>
+            <key id="IN_RS_1_26_07 " shift="07" name="" counter="518" state="0"/>
+            <key id="IN_RS_1_26_08 (Лестница, 1-2 этаж, светодиодная подсветка)" shift="08" name="" counter="262" state="0"/>
+            <key id="IN_RS_1_26_09" shift="09" name="" counter="6" state="0"/>
+            <key id="IN_RS_1_26_10 (Лестница 1-2 этаж, свет)" shift="10" name="" counter="173" state="0"/>
+            <key id="IN_RS_1_26_11" shift="11" name="" counter="179" state="0"/>
+            <key id="IN_RS_1_26_12 (Холл 2 этажа, верхний свет)" shift="12" name="" counter="4276" state="0"/>
+            <key id="IN_RS_1_26_13 (Ванная комната, 2 этаж, вентилятор)" shift="13" name="" counter="1083" state="0"/>
+            <key id="IN_RS_1_26_14" shift="14" name="" counter="1085" state="0"/>
+            <key id="IN_RS_1_26_15 (Ванная комната, 2 этаж, свет)" shift="15" name="" counter="1509" state="0"/>
+            <key id="IN_RS_1_26_16 " shift="16" name="" counter="741" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_26" parity="no" name="ЩР-26 (Спальня комната). Контроллер вывода" base_address="16*14" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_26_01 (Ванная верхний свет)" shift="01" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_26_02 (Большой с/у над зеркалом)" shift="02" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_26_03 (Спальня потолок)" shift="03" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_26_04 (Большой с/у, верхний свет)" shift="04" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_26_05 (Вентиляция ванная)" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_09 (Гостевой с/у потолок)" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_10 (Малый с/у потолок)" shift="10" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_26_11 (Гостевой с/у вентиляция)" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_12 (Гостевая комната)" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_13 (Вентилятор туалет)" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_14 (Гостевая комната, стена)" shift="14" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_26_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_26_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="IN_31" parity="no" name="ЩР-31 (Чердак, левая сторона). Контроллер ввода" base_address="16*14+1" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="none" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <definition> third floor left box key-controller </definition>
+            <key id="IN_RS_1_31_01" shift="01" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_02" shift="02" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_03" shift="03" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_04" shift="04" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_05" shift="05" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_06" shift="06" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_07" shift="07" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_08" shift="08" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_09" shift="09" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_10" shift="10" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_11" shift="11" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_12" shift="12" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_13" shift="13" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_14" shift="14" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_15" shift="15" name="" counter="0" state="0"/>
+            <key id="IN_RS_1_31_16" shift="16" name="" counter="0" state="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_32" parity="no" name="ЩР-32 (Чердак, правая сторона). Контроллер вывода" base_address="16*15" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="none" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_33_01" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_03" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_04" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_33_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+    </net_RS>
+    <net_RS sendSocket="30005" recieveSocket="30015" Master="master" name="RS485-2" type="RS485" ip="192.168.127.254">
+        <device_RS rs485_delay_timeout="2" box="OUT_12" parity="no" name="" base_address="16*2" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_12_01 (Управление отоплением)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_02 (Светильник. Крыльцо)" shift="02" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_12_03 (Светильник. Фасад дома)" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_04 (Светильник. Передний двор)" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_05 (Светильник. Задний двор)" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_06 (Светильник. Балкон)" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_07 (Светильник. Терраса)" shift="07" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_12_08 (Светильник. Навес у котельной)" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_09 (Светильник. Прихожая)" shift="09" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_12_10 (Светильник, Гардероб)" shift="10" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_12_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_12_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_13" parity="no" name="ЩР-13 (Гостиная слева). Контроллер вывода" base_address="16*3" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_13_01" shift="01" name="Лестница. 1-ступень" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_03" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_04" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_13_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_14" parity="no" name="ЩР-14 (Гостиная справа). Контроллер вывода" base_address="16*4" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_14_01 (Светильник. Холл первого этажа)" shift="01" name="Гостиная. Верхнее освещение слева." pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_14_02 (Светильник. Кладовая)" shift="02" name="Гостиная. Верхнее освещение справау." pwm="0" output="1000"/>
+            <contact emergency="0" id="OUT_RS_2_14_03 (Светильник. Гостиная верхний свет, слева)" shift="03" name="Гостиная. Боковое освещение." pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_04 (Светильник. Гостиная верхний свет, справа)" shift="04" name="Гостиная. Освещение над столом." pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_05 (Светильник. Гостиная освещение стен)" shift="05" name="Гостиная. Освещение в эркере." pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_06 (Светильник. Гостиная освещение в эркере)" shift="06" name="Гостиная. Освещение в нише, слева" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_07 (Светильник. Гостиная освещение над столом)" shift="07" name="Гостиная. Освещение в нише, справа" pwm="0" output="1000"/>
+            <contact emergency="0" id="OUT_RS_2_14_08 (Светильник. Гостиная подстветка ниш)" shift="08" name="Гостиная. Освещение кухни" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_09 (Светильник. Кухня)" shift="09" name="Гостиная. Освещение камина" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_10 (Светильник. Лестница 1-2 этаж)" shift="10" name="Гостиная. Освещение в кладовой" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_14_11 (DMX-cветильник. Лестница 1-2 этаж)" shift="11" name="Гостиная. Освещение холл 1 этажа" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_14_12 (Светильник. Холл 2 этажа, освещение стен)" shift="12" name="Лестница. Освещение 1 этаж" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_14_13 (Светильник. Лестница 2-3 этаж)" shift="13" name="Лестница. Освещение 2 этаж" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_14_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_14_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_15" parity="no" name="ЩР-15 (Комната отдыха). Контроллер вывода" base_address="16*5" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_15_01 (Светильник. Комната отдыха, верхний свет)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_02 (Светильник. Комната отдыха, боковой свет)" shift="02" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_15_03 (Светильник. Комната отдыха, душевая)" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_04 (Светильник. Сауна, освещение)" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_05 (Светильник. Котельная, свет)" shift="05" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_15_06 (Светильник. С/У первого этажа)" shift="06" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_15_07 (Управление отоплением)" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_08 (Вытяжка. С/У первого этажа)" shift="08" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_15_09 (Вытяжка. Комната отдыха)" shift="09" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_15_10 (Вытяжка. Сауна)" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_11 (Вытяжка. Котельная)" shift="11" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_15_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_15_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_16" parity="no" name="ЩР-16 (Музыкальная студия). Контроллер вывода" base_address="16*6" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_16_01 (Светильник. Музыкальная комната, верхний свет)" shift="01" name="Верхнее освещение в музыкальной комнате" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_02 (Светильник. Музыкальная комната, освещение сцены)" shift="02" name="Прожекторы в музыкальной комнате" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_03 (Светильник. Музыкальная комната, освещение стен)" shift="03" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_16_04" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_16_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_21" parity="no" name="ЩР-21 (Центральный щит 2-этажа). Контроллер вывода" base_address="16*7" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_21_01" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_03" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_04" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_21_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_23" parity="no" name="ЩР-23 (Степина комната). Контроллер вывода" base_address="16*8" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_23_01 (Светильник. Катина комната, верхний свет)" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_02 (Светильник. Катина комната, боковой свет)" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_03 (Светильник. Степина комната, верхний свет)" shift="03" name="" pwm="0" output="1000"/>
+            <contact emergency="0" id="OUT_RS_2_23_04 (Светильник. Степина комната, боковой свет)" shift="04" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_23_05 (Светильник. Гришина комната, верхний свет)" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_06 (Светильник. Гришина комната, боковой свет)" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_07 (Светильник. Холл 2 этажа, верхнее освещение)" shift="07" name="" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_23_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_23_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_24" parity="no" name="ЩР-24 (Гришина комната). Контроллер вывода" base_address="16*9" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_24_01" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_03" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_04" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_24_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_25" parity="no" name="ЩР-25 (Гостевая комната). Контроллер вывода" base_address="16*10" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_25_01 (Светильник. Малый с/у второго этажа, свет)" shift="01" name="Верхнее освещение в гостевой комнате" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_25_02 (Светильник. Гостевая ванная комната второго этажа)" shift="02" name="Боковое освещение в гостевой комнате" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_03 (Светильник. Гостевая комната, верхний свет)" shift="03" name="Датчик движения в гостевой комнате" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_04 (Вытяжка. Малый с/у второго этажа)" shift="04" name="Верхнее освещение в малом с/у" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_05 (Вытяжка. Гостевая ванная второго этажа)" shift="05" name="Вытяжка в малом с/у" pwm="0" output="1"/>
+            <contact emergency="0" id="OUT_RS_2_25_06" shift="06" name="Верхнее освещение в гостевой ванной" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_07" shift="07" name="Дополнительное освещение в гостевой ванной" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_08" shift="08" name="Вытяжка в гостевой ванной" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_25_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_31" parity="no" name="ЩР-31 (Чердак, левая сторона). Контроллер вывода" base_address="16*12" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_31_01" shift="01" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_02" shift="02" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_03" shift="03" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_04" shift="04" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_05" shift="05" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_06" shift="06" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_07" shift="07" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_08" shift="08" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_09" shift="09" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_10" shift="10" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_11" shift="11" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_12" shift="12" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_13" shift="13" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_14" shift="14" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_15" shift="15" name="" pwm="0" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_31_16" shift="16" name="" pwm="0" output="0"/>
+        </device_RS>
+        <device_RS rs485_delay_timeout="2" box="OUT_32" parity="no" name="ЩР-32 (Чердак, правая сторона). Контроллер вывода 2" base_address="16*13" noise_filter="no" wordLen="8" net_max_timeout="5" stop_bit="1" type="MU110-16R" net_address_len="8" ver="1.0" protocol="owen" baudRate="9600">
+            <contact emergency="0" id="OUT_RS_2_32_01" shift="01" name="" pwm="1" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_02" shift="02" name="" pwm="2" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_03" shift="03" name="" pwm="3" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_04" shift="04" name="" pwm="4" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_05" shift="05" name="" pwm="5" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_06" shift="06" name="" pwm="6" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_07" shift="07" name="" pwm="7" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_08" shift="08" name="" pwm="8" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_09" shift="09" name="" pwm="9" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_10" shift="10" name="" pwm="10" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_11" shift="11" name="" pwm="11" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_12" shift="12" name="" pwm="12" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_13" shift="13" name="" pwm="13" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_14" shift="14" name="" pwm="14" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_15" shift="15" name="" pwm="15" output="0"/>
+            <contact emergency="0" id="OUT_RS_2_32_16" shift="16" name="" pwm="16" output="0"/>
+        </device_RS>
+    </net_RS>
+    <net_RS sendSocket="30013" recieveSocket="30003" Master="master" name="DMX-512-1" type="DMX-512" ip="192.168.127.254">
+        <DMX_channel id="OUT_DMX_1_000" shift="000" name="Лестница. 1-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_001" shift="001" name="Лестница. 2-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_002" shift="002" name="Лестница. 3-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_003" shift="003" name="Лестница. 4-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_004" shift="004" name="Лестница. 5-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_005" shift="005" name="Лестница. 6-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_006" shift="006" name="Лестница. 7-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_007" shift="007" name="Лестница. 8-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_008" shift="008" name="Лестница. 9-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_009" shift="009" name="Лестница. 10-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_010" shift="010" name="Лестница. 11-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_011" shift="011" name="Лестница. 12-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_012" shift="012" name="Лестница. 13-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_013" shift="013" name="Лестница. 14-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_014" shift="014" name="Лестница. 15-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_015" shift="015" name="Лестница. 16-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_016" shift="016" name="Лестница. 17-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_017" shift="017" name="Лестница. 18-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_018" shift="018" name="Лестница. 19-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_019" shift="019" name="Лестница. 20-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_020" shift="020" name="Лестница. 21-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_021" shift="021" name="Лестница. 22-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_022" shift="022" name="Лестница. 23-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_023" shift="023" name="Лестница. 24-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_024" shift="024" name="Лестница. 25-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_025" shift="025" name="Лестница. 26-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_026" shift="026" name="Лестница. 27-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_027" shift="027" name="Лестница. 28-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_028" shift="028" name="Лестница. 29-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_029" shift="029" name="Лестница. 30-ступень" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_030" shift="030" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_031" shift="031" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_032" shift="032" name="Музыкальная комната. Освещение сцены слева. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_033" shift="033" name="Музыкальная комната. Освещение сцены слева. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_034" shift="034" name="Музыкальная комната. Освещение сцены слева. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_035" shift="035" name="Музыкальная комната. Освещение сцены слева. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_036" shift="036" name="Музыкальная комната. Освещение сцены слева. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_037" shift="037" name="Музыкальная комната. Освещение сцены слева. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_038" shift="038" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_039" shift="039" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_040" shift="040" name="Музыкальная комната. Освещение сцены справа. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_041" shift="041" name="Музыкальная комната. Освещение сцены справа. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_042" shift="042" name="Музыкальная комната. Освещение сцены справа. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_043" shift="043" name="Музыкальная комната. Освещение сцены справа. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_044" shift="044" name="Музыкальная комната. Освещение сцены справа. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_045" shift="045" name="Музыкальная комната. Освещение сцены справа. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_046" shift="046" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_047" shift="047" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_048" shift="048" name="Музыкальная комната. Освещение над сценой 1. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_049" shift="049" name="Музыкальная комната. Освещение над сценой 1. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_050" shift="050" name="Музыкальная комната. Освещение над сценой 1. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_051" shift="051" name="Музыкальная комната. Освещение над сценой 1. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_052" shift="052" name="Музыкальная комната. Освещение над сценой 1. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_053" shift="053" name="Музыкальная комната. Освещение над сценой 1. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_054" shift="054" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_055" shift="055" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_056" shift="056" name="Музыкальная комната. Освещение над сценой 2. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_057" shift="057" name="Музыкальная комната. Освещение над сценой 2. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_058" shift="058" name="Музыкальная комната. Освещение над сценой 2. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_059" shift="059" name="Музыкальная комната. Освещение над сценой 2. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_060" shift="060" name="Музыкальная комната. Освещение над сценой 2. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_061" shift="061" name="Музыкальная комната. Освещение над сценой 2. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_062" shift="062" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_063" shift="063" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_064" shift="064" name="Музыкальная комната. Освещение над сценой 3. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_065" shift="065" name="Музыкальная комната. Освещение над сценой 3. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_066" shift="066" name="Музыкальная комната. Освещение над сценой 3. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_067" shift="067" name="Музыкальная комната. Освещение над сценой 3. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_068" shift="068" name="Музыкальная комната. Освещение над сценой 3. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_069" shift="069" name="Музыкальная комната. Освещение над сценой 3. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_070" shift="070" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_071" shift="071" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_072" shift="072" name="Музыкальная комната. Освещение над сценой 4. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_073" shift="073" name="Музыкальная комната. Освещение над сценой 4. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_074" shift="074" name="Музыкальная комната. Освещение над сценой 4. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_075" shift="075" name="Музыкальная комната. Освещение над сценой 4. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_076" shift="076" name="Музыкальная комната. Освещение над сценой 4. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_077" shift="077" name="Музыкальная комната. Освещение над сценой 4. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_078" shift="078" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_079" shift="079" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_080" shift="080" name="Музыкальная комната. Освещение за сценой слева. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_081" shift="081" name="Музыкальная комната. Освещение за сценой слева. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_082" shift="082" name="Музыкальная комната. Освещение за сценой слева. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_083" shift="083" name="Музыкальная комната. Освещение за сценой слева. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_084" shift="084" name="Музыкальная комната. Освещение за сценой слева. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_085" shift="085" name="Музыкальная комната. Освещение за сценой слева. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_086" shift="086" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_087" shift="087" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_088" shift="088" name="Музыкальная комната. Освещение за сценой справа. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_089" shift="089" name="Музыкальная комната. Освещение за сценой справа. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_090" shift="090" name="Музыкальная комната. Освещение за сценой справа. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_091" shift="091" name="Музыкальная комната. Освещение за сценой справа. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_092" shift="092" name="Музыкальная комната. Освещение за сценой справа. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_093" shift="093" name="Музыкальная комната. Освещение за сценой справа. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_094" shift="094" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_095" shift="095" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_096" shift="096" name=" Освещение степина комната. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_097" shift="097" name=" Освещение степина комната. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_098" shift="098" name=" Освещение степина комната. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_099" shift="099" name=" Освещение степина комната. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_100" shift="100" name=" Освещение степина комната. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_101" shift="101" name=" Освещение степина комната. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_102" shift="102" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_103" shift="103" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_104" shift="104" name="Освещение катина комната. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_105" shift="105" name="Освещение катина комната. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_106" shift="106" name="Освещение катина комната. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_107" shift="107" name="Освещение катина комната. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_108" shift="108" name="Освещение катина комната. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_109" shift="109" name="Освещение катина комната. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_110" shift="110" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_111" shift="111" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_112" shift="112" name="Освещение гришина комната. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_113" shift="113" name="Освещение гришина комната. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_114" shift="114" name="Освещение гришина комната. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_115" shift="115" name="Освещение гришина комната. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_116" shift="116" name="Освещение гришина комната. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_117" shift="117" name="Освещение гришина комната. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_118" shift="118" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_119" shift="119" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_120" shift="120" name="Освещение гостевая комната. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_121" shift="121" name="Освещение гостевая комната. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_122" shift="122" name="Освещение гостевая комната. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_123" shift="123" name="Освещение гостевая комната. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_124" shift="124" name="Освещение гостевая комната. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_125" shift="125" name="Освещение гостевая комната. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_126" shift="126" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_127" shift="127" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_128" shift="128" name="Освещение спальня. RED" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_129" shift="129" name="Освещение спальня. GREEN" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_130" shift="130" name="Освещение спальня. BLUE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_131" shift="131" name="Освещение спальня. WHITE" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_132" shift="132" name="Освещение спальня. AMBER" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_133" shift="133" name="Освещение спальня. UV" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_134" shift="134" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_135" shift="135" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_136" shift="136" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_137" shift="137" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_138" shift="138" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_139" shift="139" name="" room="living room" state="0"/>
+        <DMX_channel id="OUT_DMX_1_140" shift="140" name="" room="living room" state="0"/>
+    </net_RS>
+    <net_RS sendSocket="30014" recieveSocket="30004" Master="master" name="DMX-512-2" type="DMX-512" ip="192.168.127.254">
+        <DMX_channel id="OUT_DMX_2_000" shift="000" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_001" shift="001" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_002" shift="002" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_003" shift="003" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_004" shift="004" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_005" shift="005" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_006" shift="006" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_007" shift="007" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_008" shift="008" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_009" shift="009" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_010" shift="010" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_011" shift="011" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_012" shift="012" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_013" shift="013" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_014" shift="014" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_015" shift="015" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_016" shift="016" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_017" shift="017" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_018" shift="018" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_019" shift="019" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_020" shift="020" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_021" shift="021" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_022" shift="022" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_023" shift="023" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_024" shift="024" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_025" shift="025" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_026" shift="026" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_027" shift="027" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_028" shift="028" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_029" shift="029" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_030" shift="030" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_031" shift="031" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_032" shift="032" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_033" shift="033" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_034" shift="034" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_035" shift="035" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_036" shift="036" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_037" shift="037" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_038" shift="038" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_039" shift="039" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_040" shift="040" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_041" shift="041" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_042" shift="042" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_043" shift="043" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_044" shift="044" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_045" shift="045" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_046" shift="046" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_047" shift="047" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_048" shift="048" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_049" shift="049" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_050" shift="050" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_051" shift="051" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_052" shift="052" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_053" shift="053" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_054" shift="054" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_055" shift="055" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_056" shift="056" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_057" shift="057" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_058" shift="058" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_059" shift="059" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_060" shift="060" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_061" shift="061" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_062" shift="062" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_063" shift="063" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_064" shift="064" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_065" shift="065" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_066" shift="066" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_067" shift="067" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_068" shift="068" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_069" shift="069" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_070" shift="070" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_071" shift="071" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_072" shift="072" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_073" shift="073" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_074" shift="074" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_075" shift="075" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_076" shift="076" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_077" shift="077" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_078" shift="078" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_079" shift="079" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_080" shift="080" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_081" shift="081" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_082" shift="082" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_083" shift="083" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_084" shift="084" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_085" shift="085" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_086" shift="086" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_087" shift="087" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_088" shift="088" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_089" shift="089" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_090" shift="090" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_091" shift="091" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_092" shift="092" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_093" shift="093" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_094" shift="094" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_095" shift="095" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_096" shift="096" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_097" shift="097" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_098" shift="098" name="" room="living room" state=""/>
+        <DMX_channel id="OUT_DMX_2_099" shift="099" name="" room="living room" state=""/>
+    </net_RS>
+    <logic name="logic">
+        <simple_switch key_UP_link="IN_RS_1_12_02 (Свет в прихожей)" id="Switch_1_1_1 (Прихожая)" name="Выключатель, Прихожая" room="Прихожая">
+            <lamp_link>Lamp_1_1 (Прихожая)</lamp_link>
+            <lamp_link>Lamp_1_2 (Гардероб)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_04 (Свет в гардеробе)" id="Switch_1_1_3 (Гардероб)" name="Выключатель, Гардероб" room="Прихожая"/>
+        <simple_switch key_UP_link="IN_RS_1_12_01 (Свет на крыльце)" id="Switch_1_1_2 (Крыльцо)" name="Выключатель. Крыльцо" room="Прихожая">
+            <lamp_link>Lamp_out_1 (Крыльцо)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_10 (Фасад)" id="Switch_1_2_1 (Фасад)" name="Выключатель. Фасад дома." room="Прихожая">
+            <lamp_link>Lamp_out_2 (Фасад дома)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_01 (Свет на крыльце)" id="Switch_1_2_2 (Передний двор)" name="Выключатель. Передний двор" room="Прихожая">
+            <lamp_link>Lamp_out_3 (Передний двор)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_02 (Задний двор)" id="Switch_1_2_3 (Задний двор)" name="Выключатель. Задний двор" room="Прихожая">
+            <lamp_link>Lamp_out_4 (Задний двор)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_08 (Выключить все)" id="Switch_1_2_4 (Выключить все)" name="Выключатель. Выключить все" room="Прихожая">
+            <lamp_link></lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_12 (Свет в гардеробе из коридора)" id="Switch_1_3_1 (Гардероб)" name="Выключатель. Гардероб в холле" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_1 (Прихожая)</lamp_link>
+            <lamp_link>Lamp_1_2 (Гардероб)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_11 (Свет в прихожей из коридора)" id="Switch_1_3_1 (Прихожая)" name="Выключатель. Прихожая в холле" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_1 (Прихожая)</lamp_link>
+            <lamp_link>Lamp_1_2 (Гардероб)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_12_09 (Свет в холле 1 этажа)" id="Switch_1_3_2 (Холл 1 этажа)" name="Выключатель. Холл первого этажа" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_3 (Холл первого этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_10 (Туалет 1 этажа, свет)" id="Switch_1_4_1 (С/У 1 этажа, свет)" name="Выключатель. С/У первого этажа, освещение" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_24 (С/У 1 этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_04 (Комната отдыха, боковой свет)" id="Switch_1_4_2 (С/У 1 этажа, вентиляция)" name="Выключатель. С/У первого этажа, вентиляция" room="Холл 1 этажа">
+            <lamp_link>Blower_1_1 (С/У 1 этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_14 (Освещение лестницы)" id="Switch_1_5_1 (Лестница, 1-2 этаж, свет)" name="Выключатель. Свет лестница, 1 этаж" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_25 (Лестница 1-2 этаж)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_11 (Освещение лестничной площадки)" id="Switch_1_5_2 (Лестничная площадка)" name="Выключатель. Лестничная площадка" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_26 (Лестничная площадка)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_12 (Холл 1 этажа от лестницы)" id="Switch_1_5_3 (Холл 1 этажа)" name="Выключатель. Холл первого этажа от лестницы" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_3 (Холл первого этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_15 (Кладовая)" id="Switch_1_6_1 (Кладовая)" name="Выключатель. Кладовая" room="Холл 1 этажа">
+            <lamp_link>Lamp_1_4 (Кладовая)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_09 (Гостиная, свет верхний, слева)" id="Switch_1_7_1 (Гостиная, свет верхний, слева)" name="Выключатель. Гостиная верхний свет, слева" room="Гостиная при входе">
+            <lamp_link>Lamp_1_5 (Гостиная верхний свет, слева)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_10 (Гостиная, свет верхний, справа)" id="Switch_1_7_2 (Гостиная, свет верхний, справа)" name="Выключатель. Гостиная верхний свет, справа" room="Гостиная при входе">
+            <lamp_link>Lamp_1_6 (Гостиная верхний свет, справа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_11 (Гостиная, освещение стена)" id="Switch_1_7_3 (Гостиная, освещение стена кирпичная)" name="Выключатель. Гостиная освещение стена кирпичная" room="Гостиная при входе">
+            <lamp_link>Lamp_1_7 (Гостиная освещение стена кирпичная)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_11 (Гостиная, освещение стена)" id="Switch_1_7_4 (Гостиная, освещение стена штукатурная)" name="Выключатель. Гостиная освещение стена штукатурная" room="Гостиная при входе">
+            <lamp_link>Lamp_1_8 (Гостиная освещение стена штукатурная)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_12 (Гостиная, свет над столом)" id="Switch_1_7_5 (Гостиная, свет над столом)" name="Выключатель. Гостиная освещение над столом" room="Гостиная при входе">
+            <lamp_link>Lamp_1_9 (Гостиная освещение над столом)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_14 (Гостиная, подсветка ниш)" id="Switch_1_7_6 (Гостиная, подсветка ниш)" name="Выключатель. Гостиная подстветка ниш" room="Гостиная при входе">
+            <lamp_link>Lamp_1_10 (Гостиная подстветка ниш)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_05 (Кухня над столешницей, правый)" id="Switch_1_7_7 (Гостиная кухня над столешницй правый)" name="Выключатель. Гостиная кухня над столешницй правый" room="Гостиная при входе">
+            <lamp_link>Lamp_1_11 (Кухня)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_06 (Кухня над столешницей, левый)" id="Switch_1_7_8 (Гостиная кухня над столешницй левый)" name="Выключатель. Гостиная кухня над столешнецей левый" room="Гостиная при входе">
+            <lamp_link>Lamp_1_10 (Гостиная подстветка ниш)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_13 (Гостиная, подсветка кухни)" id="Switch_1_8_1 (Гостиная, кухня, свет)" name="Выключатель. Кухня" room="Гостиная, кухня">
+            <lamp_link>Lamp_1_11 (Кухня)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_04 (Выход на террасу)" id="Switch_1_9_1 (Выход на террасу)" name="Выключатель. Выход на террасу" room="Гостиная, выход на террасу">
+            <lamp_link>Lamp_1_12 (Выход на террасу)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_05 (Гостиная, освещение стен)" id="Switch_1_9_2 (Гостиная, освещение стен)" name="Выключатель. Гостиная освещение стен" room="Гостиная, выход на террасу">
+            <lamp_link>Lamp_1_7 (Гостиная освещение стен)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_03 (Гостиная, освещение кухня)" id="Switch_1_10_1 (Гостиная, свет на кухне)" name="Выключатель. Свет на кухне" room="Гостиная, в эркере">
+            <lamp_link>Lamp_1_8 (Гостиная освещение в эркере)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_01 (Гостиная, освещение над столом)" id="Switch_1_10_2 (Гостиная, свет над столом)" name="Выключатель. Свет над столом" room="Гостиная, в эркере">
+            <lamp_link>Lamp_1_9 (Гостиная освещение над столом)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_13_05 (Кухня над столешницей, правый)" id="" name="Выключатель. Над столешницей, левый." room="">
+            <lamp_link>Lamp_1_8 (Гостиная освещение в эркере)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_16_01 (Музыкальная комната, верхний свет)" id="Switch_1_11_1 (Музыкальная комната, верхний свет)" name="Выключатель. Музыкальная комната, верхний свет" room="Музыкальная комната">
+            <lamp_link>Lamp_1_15 (Музыкальная комната, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_16_02 (Музыкальная комната, сцена)" id="Switch_1_11_2 (Музыкальная комната, сцена)" name="Выключатель. Музыкальная комната, освещение сцены" room="Музыкальная комната">
+            <lamp_link>Lamp_1_16 (Музыкальная комната, освещение сцены)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_16_03 (Музыкальная комната, проектор)" id="Switch_1_11_3 (Музыкальная комната, проектор)" name="Выключатель. Музыкальная комната, проектор" room="Музыкальная комната">
+            <lamp_link>Lamp_1_17 (Музыкальная комната, проектор)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_14 (Комната отдыха, свет)" id="Switch_1_12_1 (Комната отдыха, верхний свет)" name="Выключатель. Комната отдыха, свет" room="Комната отдыха">
+            <lamp_link>Lamp_1_18 (Комната отдыха, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_13 (Комната отдыха, вентиляция)" id="Switch_1_12_2 (Комната отдыха, боковой свет)" name="Выключатель. Комната отдыха, вентилятор" room="Комната отдыха">
+            <lamp_link>Lamp_1_19 (Комната отдыха, боковой свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_15 (Душ, свет)" id="Switch_1_12_3 (Комната отдыха, душевая свет)" name="Выключатель. Комната отдыха, душевая свет" room="Комната отдыха">
+            <lamp_link>Lamp_1_28 (Душ, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_16 (Душ, вентиляция)" id="Switch_1_12_4 (Комната отдыха, душевая вентиляция)" name="Выключатель. Комната отдыха, душевая вентиляция" room="Комната отдыха">
+            <lamp_link>Blower_1_5 (Душ, вытяжка)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_06 (Сауна, нижнее освещение)" id="Switch_1_13_1 (Сауна, нижнее освещение)" name="Выключатель. Сауна, нижнее освещение" room="Сауна">
+            <lamp_link>Lamp_1_21 (Сауна, нижнее освещение)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_07 (Сауна, верхнее освещение)" id="Switch_1_13_1 (Сауна, верхнее освещение)" name="Выключатель. Сауна, верхнее освещение" room="Сауна">
+            <lamp_link>Lamp_1_21 (Сауна, верхнее освещение)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_08 (Предбанник, свет)" id="Switch_1_13_2 (Предбанник, свет)" name="Выключатель. Предбанник, свет" room="Сауна">
+            <lamp_link>Lamp_1_27 (Предбанник, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_05 (Котельная, свет)" id="Switch_1_14_1 (Котельная, свет)" name="Выключатель. Котельная, свет" room="Котельная">
+            <lamp_link>Lamp_1_23 (Котельная, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_11 (Котельная, вытяжка)" id="Switch_1_14_2 (Котельная, вытяжка)" name="Выключатель. Котельная, вытяжка" room="Котельная">
+            <lamp_link>Blower_1_4 (Котельная)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_15_10 (Навес, свет)" id="Switch_1_14_3 (Навес, свет)" name="Выключатель. Навес у котельной, свет" room="Котельная">
+            <lamp_link>Lamp_1_24 (Навес у котельной, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_10 (Лестница 1-2 этаж, свет)" id="Switch_2_1_1 (Лестница 1-2 этаж, свет)" name="Выключатель. Лестница 1-2 этаж, свет" room="Лестница, спуск">
+            <lamp_link>Lamp_1_25 (Лестница 1-2 этаж)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_08 (Лестница, 1-2 этаж, светодиодная подсветка)" id="Switch_2_1_2 (Лестница 1-2 этаж, светодиодная подсветка)" name="Выключатель. Лестница 1-2 этаж, светодиодная подсветка" room="Лестница, спуск"/>
+        <simple_switch key_UP_link="IN_RS_1_24_05 (Холл 2 этаж, доска)" id="Switch_2_1_3 (Холл 2 этажа, доска)" name="Выключатель. Холл 2 этажа, доска" room="Лестница, спуск">
+            <lamp_link>Lamp_2_1 (Холл 2 этажа, доска)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_24_06 (Холл 2 этаж, подсветка стен)" id="Switch_2_1_4 (Холл 2 этажа, боковой свет)" name="Выключатель. Холл 2 этажа, боковой свет" room="Лестница, спуск">
+            <lamp_link>Lamp_2_1 (Холл 2 этажа, освещение стен)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_24_07 (Холл 2 этажа, верхний свет)" id="Switch_2_1_5 (Холл 2 этажа, верхний свет)" name="Выключатель. Холл 2 этажа, верхний свет" room="Лестница, спуск">
+            <lamp_link>Lamp_2_20 (Холл 2 этажа, верхнее освещение)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_23_08 (Лестница 2-3 этаж)" id="Switch_2_2_1 (Лестница 2-3 этаж, свет)" name="Выключатель. Лестница 2-3 этаж, свет" room="Лестница, подъем">
+            <lamp_link>Lamp_2_19 (Лестница 2-3 этаж)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_14_09 (Лестница 2-3 этаж, светодиодная подсветка)" id="Switch_2_2_1 (Лестница 2-3 этаж, светодиодная подсветка)" name="Выключатель. Лестница 2-3 этаж, светодиодная подсветка" room="Лестница, подъем"/>
+        <simple_switch key_UP_link="IN_RS_1_26_12 (Холл 2 этажа, верхний свет)" id="Switch_2_2_2 (Холл 2 этажа, освещение верхнее)" name="Выключатель. Холл 2 этажа, освещение верхнее" room="Лестница, подъем">
+            <lamp_link>Lamp_2_20 (Холл 2 этажа, верхнее освещение)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_25_13 (Малый С/У, 2 этаж, свет)" id="Switch_2_3_1 (Малый С/У, 2 этаж, свет)" name="Выключатель. Малый с/у второго этажа, свет" room="Холл 2 этажа">
+            <lamp_link>Lamp_2_2 (Малый с/у второго этажа, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_25_02 (Малый С/У, 2 этаж, вентиляция)" id="Switch_2_3_2 (Малый С/У, 2 этаж, вентиляция)" name="Выключатель. Малый с/у второго этажа, вентиляция" room="Холл 2 этажа">
+            <lamp_link>Blower_2_1 (Малый с/у второго этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_05 (Большой С/У, верхний свет)" id="Switch_2_4_1 (Большой С/У, 2 этаж, свет)" name="Выключатель. Большой с/у второго этажа" room="Холл 2 этажа">
+            <lamp_link>Lamp_2_4 (Большой с/у второго этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_06 (Большой С/У, боковая подсветка)" id="Switch_2_4_2 (Большой С/У, 2 этаж, зеркало)" name="Выключатель. Большой с/у второго этажа зеркало" room="Холл 2 этажа">
+            <lamp_link>Lamp_2_4_1 (Большой С/У, 2 этаж, зеркало)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_15 (Ванная комната, 2 этаж, свет)" id="Switch_2_5_1 (Ванная комната, 2 этаж, свет)" name="Выключатель. Ванная комната второго этажа, свет" room="Холл 2 этажа">
+            <lamp_link>Lamp_2_5 (Ванная комната второго этажа, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_13 (Ванная комната, 2 этаж, вентилятор)" id="Switch_2_5_2 (Ванная комната, 2 этаж, вентиляция)" name="Выключатель. Ванная комната второго этажа, вентиляция" room="Холл 2 этажа">
+            <lamp_link>Blower_2_2 (Ванная второго этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_25_03 (Гостевая ванная комната, 2 этаж, свет)" id="Switch_2_6_1 (Гостевая ванная комната, 2 этаж, свет)" name="Выключатель. Гостевая ванная комната второго этажа, свет" room="Гостевая комната">
+            <lamp_link>Lamp_2_7 (Гостевая ванная комната второго этажа, свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_25_02 (Гостевая ванная комната, 2 этаж, вентиляция)" id="Switch_2_6_2 (Гостевая ванная комната, 2 этаж, вентиляция)" name="Выключатель. Гостевая ванная комната второго этажа, вентиляция" room="Гостевая комната">
+            <lamp_link>Blower_2_3 (Гостевая ванная второго этажа)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_02 (Спальня, верхний свет)" id="Switch_2_7_1 (Спальня, верхний свет)" name="Выключатель. Спальня, верхний свет" room="Спальня">
+            <lamp_link>Lamp_2_9 (Спальня, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_26_07 (Спальня, боковой свет)" id="Switch_2_7_2 (Спальня, боковой свет)" name="Выключатель. Спальня, боковой свет" room="Спальня">
+            <lamp_link>Lamp_2_10 (Спальня, боковой свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_25_09 (Гостевая комната, боковой свет)" id="Switch_2_8_1 (Гостевая комната, верхний свет)" name="Выключатель. Гостевая комната, верхний свет" room="Гостевая комната">
+            <lamp_link>Lamp_2_11 (Гостевая комната, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_25_10 (Гостевая комната, верхний свет)" id="Switch_2_8_2 (Гостевая комната, боковой свет)" name="Выключатель. Гостевая комната, боковой свет" room="Гостевая комната">
+            <lamp_link>Lamp_2_12 (Гостевая комната, боковой свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_23_01 (Катина комната, верхний свет)" id="Switch_2_9_1 (Катина комната, верхний свет)" name="Выключатель. Катина комната, верхний свет" room="Катина комната">
+            <lamp_link>Lamp_2_13 (Катина комната, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_23_02 (Катина комната, боковой свет)" id="Switch_2_9_2 (Катина комната, боковой свет)" name="Выключатель. Катина комната, боковой свет" room="Катина комната">
+            <lamp_link>Lamp_2_14 (Катина комната, боковой свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_23_06 (Степина комната, верхний свет)" id="Switch_2_10_1 (Степина комната, верхний свет)" name="Выключатель. Степина комната, верхний свет" room="Степина комната">
+            <lamp_link>Lamp_2_15 (Степина комната, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_23_05 (Степина комната, карта)" id="Switch_2_10_2 (Степина комната, боковой свет)" name="Выключатель. Степина комната, боковой свет" room="Степина комната">
+            <lamp_link>Lamp_2_16 (Степина комната, боковой свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_24_01 (Гришина комната, верхний свет)" id="Switch_2_11_1 (Гришина комната, верхний свет)" name="Выключатель. Гришина комната, верхний свет" room="Гришина комната">
+            <lamp_link>Lamp_2_17 (Гришина комната, верхний свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_24_02 (Гришина комната, подсветка гитар)" id="Switch_2_11_2 (Гришина комната, боковой свет)" name="Выключатель. Гришина комната, боковой свет" room="Гришина комната">
+            <lamp_link>Lamp_2_18 (Гришина комната, боковой свет)</lamp_link>
+        </simple_switch>
+        <simple_switch key_UP_link="IN_RS_1_23_07 (Выход на балкон, свет)" id="Switch_2_12_1 (Выход на балкон, свет)" name="Выключатель. Выход на балкон" room="Холл 2 этажа">
+            <lamp_link>Lamp_out_5 (Выход на балкон)</lamp_link>
+        </simple_switch>
+        <one_key_dimmer key_UP_link="IN_RS_1_12_02" id="D1_1" name="one key dimmer" room="living room">
+            <lamp_link> lamp_2 </lamp_link>
+        </one_key_dimmer>
+        <one_key_dimmer key_UP_link="" id="" name="one key dimmer_2" room="">
+            <lamp_link>ert</lamp_link>
+            <lamp_link>D1_1</lamp_link>
+        </one_key_dimmer>
+        <two_keys_dimmer key_UP_link="IN_RS_1_12_03" id="" name="two keys dimmer" key_DOWN_link="IN_RS_1_12_04" room="living room">
+            <lamp_link>S_1_2</lamp_link>
+        </two_keys_dimmer>
+        <color_dimmer id="DC_1" key_LIGTH_link="IN_RS_1_12_05" name="color dimmer" room="living room" key_HUE_link="IN_RS_1_12_06">
+            <lamp_link>S_1_2</lamp_link>
+        </color_dimmer>
+        <simple_lamp contact_link="OUT_RS_1_11_11 (Светильник главный вход)" id="Lamp_out_1 (Крыльцо)" name="Светильник. Крыльцо" room="Улица">
+            <switch_link>Switch_1_1_2 (Крыльцо)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_12_03 (Светильник. Фасад дома)" id="Lamp_out_2 (Фасад дома)" name="Светильник. Фасад дома" room="Улица">
+            <switch_link>Switch_1_2_1 (Фасад)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_11_02 (чердак. передний двор)" id="Lamp_out_3 (Передний двор)" name="Светильник. Передний двор" room="Улица">
+            <switch_link>Switch_1_2_2 (Передний двор)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_09 (освещение внутренний двор)" id="Lamp_out_4 (Задний двор)" name="Светильник. Задний двор" room="Улица">
+            <switch_link>Switch_1_2_3 (Задний двор)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_12_06 (Светильник. Балкон)" id="Lamp_out_5 (Балкон)" name="Светильник. Балкон" room="Улица">
+            <switch_link>Switch_2_12_1 (Выход на балкон, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_12_07 (Светильник. Терраса)" id="Lamp_out_6 (Терраса)" name="Светильник. Терраса" room="Улица">
+            <switch_link>Switch_1_9_1 (Выход на террасу)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_12_08 (Светильник. Навес у котельной)" id="Lamp_out_7 (Навес у котельной, свет)" name="Светильник. Навес у котельной" room="Улица">
+            <switch_link>Switch_1_14_3 (Навес, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_11_01(свет в прихожей)" id="Lamp_1_1 (Прихожая)" name="Светильник. Прихожая" room="Прихожая">
+            <switch_link>Switch_1_1_1 (Прихожая)</switch_link>
+            <switch_link>Switch_1_3_1 (Прихожая)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_11_03 (свет в гардеробе)" id="Lamp_1_2 (Гардероб)" name="Светильник, Гардероб" room="Гардероб">
+            <switch_link>Switch_1_1_3 (Гардероб)</switch_link>
+            <switch_link>Switch_1_3_1 (Гардероб)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_01(холл 1 этажа)" id="Lamp_1_3 (Холл первого этажа)" name="Светильник. Холл первого этажа" room="Холл 1 этажа">
+            <switch_link>Switch_1_3_2 (Холл 1 этажа)</switch_link>
+            <switch_link>Switch_1_5_3 (Холл 1 этажа)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_14 (кладовка)" id="Lamp_1_4 (Кладовая)" name="Светильник. Кладовая" room="Кладовая">
+            <switch_link>Switch_1_6_1 (Кладовая)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_05 (гостиная потолок слева)" id="Lamp_1_5 (Гостиная верхний свет, слева)" name="Светильник. Гостиная верхний свет, слева" room="Гостиная">
+            <switch_link>Switch_1_7_1 (Гостиная, свет верхний, слева)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_06 (гостиная потолок справа)" id="Lamp_1_6 (Гостиная верхний свет, справа)" name="Светильник. Гостиная верхний свет, справа" room="Гостиная">
+            <switch_link>Switch_1_7_2 (Гостиная, свет верхний, справа)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_11 (гостиная стена кирпичная)" id="Lamp_1_7 (Гостиная освещение стена кирпичная)" name="Светильник. Гостиная освещение стена кирпичная" room="Гостиная">
+            <switch_link>Switch_1_7_3 (Гостиная, освещение стена кирпичная)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_13 (гостиная стена штукатурная)" id="Lamp_1_8 (Гостиная освещение стена штукатурная)" name="Светильник. Гостиная освещение стена штукатурная" room="Гостиная">
+            <switch_link>Switch_1_7_4 (Гостиная, освещение стена штукатурная)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_03 (над столом)" id="Lamp_1_9 (Гостиная освещение над столом)" name="Светильник. Гостиная освещение над столом" room="Гостиная">
+            <switch_link>Switch_1_7_5 (Гостиная, свет над столом)</switch_link>
+            <switch_link>Switch_1_10_2 (Гостиная, свет над столом)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_12 (Подсветка ниш)" id="Lamp_1_10 (Гостиная подстветка ниш)" name="Светильник. Гостиная подстветка ниш" room="Гостиная">
+            <switch_link>Switch_1_7_6 (Гостиная, подсветка ниш)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_07 (гостиная подсветка кухни)" id="Lamp_1_11 (Кухня)" name="Светильник. Кухня" room="Гостиная">
+            <switch_link>Switch_1_8_1 (Гостиная, кухня, свет)</switch_link>
+            <switch_link>Switch_1_10_1 (Гостиная, свет на кухне)</switch_link>
+            <switch_link>Switch_1_7_7 (Гостиная кухня над столешницй правый)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_16_01 (Светильник. Музыкальная комната, верхний свет)" id="Lamp_1_15 (Музыкальная комната, верхний свет)" name="Светильник. Музыкальная комната, верхний свет" room="Музыкальная студия">
+            <switch_link>Switch_1_11_1 (Музыкальная комната, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_16_02 (Светильник. Музыкальная комната, освещение сцены)" id="Lamp_1_16 (Музыкальная комната, освещение сцены)" name="Светильник. Музыкальная комната, освещение сцены" room="Музыкальная студия">
+            <switch_link>Switch_1_11_2 (Музыкальная комната, сцена)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_16_03 (проектор)" id="Lamp_1_17 (Музыкальная комната, проектор)" name="Светильник. Музыкальная комната, проектор" room="Музыкальная студия">
+            <switch_link>Switch_1_11_3 (Музыкальная комната, проектор)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_04 (комната отдыха свет)" id="Lamp_1_18 (Комната отдыха, свет)" name="Светильник. Комната отдыха, свет" room="Сауна">
+            <switch_link>Switch_1_12_1 (Комната отдыха, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_09 (вентиляция комната отдыха)" id="Lamp_1_19 (Комната отдыха, вентилятор)" name="Светильник. Комната отдыха, вентилятор" room="Сауна">
+            <switch_link>Switch_1_12_2 (Комната отдыха, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_15_03 (Светильник. Комната отдыха, душевая)" id="Lamp_1_20 (Комната отдыха, душевая)" name="Светильник. Комната отдыха, душевая" room="Сауна">
+            <switch_link>Switch_1_12_3 (Комната отдыха, душевая)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_06 (освещение сауны нижнее)" id="Lamp_1_21 (Сауна, нижнее освещение)" name="Светильник. Сауна, нижнее освещение" room="Сауна">
+            <switch_link>Switch_1_13_1 (Сауна, нижнее освещение)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_07 (освещение сауны верхнее)" id="Lamp_1_21 (Сауна, верхнее освещение)" name="Светильник. Сауна, верхнее освещение" room="Сауна">
+            <switch_link>Switch_1_13_1 (Сауна, верхнее освещение)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_08 (освещение котельной)" id="Lamp_1_23 (Котельная, свет)" name="Светильник. Котельная, свет" room="Котельная">
+            <switch_link>Switch_1_14_1 (Котельная, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_11 (свет в туалете)" id="Lamp_1_24 (С/У 1 этажа)" name="Светильник. С/У первого этажа" room="С/У 1 этажа">
+            <switch_link>Switch_1_4_1 (С/У 1 этажа, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_08 (освещение лестница)" id="Lamp_1_25 (Лестница 1-2 этаж)" name="Светильник. Лестница 1-2 этаж" room="Лестница">
+            <switch_link>Switch_1_5_1 (Лестница, 1-2 этаж, свет)</switch_link>
+            <switch_link>Switch_2_1_1 (Лестница 1-2 этаж, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_14_10 (освещение лестничная площадка)" id="Lamp_1_26 (Лестничная площадка)" name="Светильник. Лестничная площадка" room="Лестница">
+            <switch_link>Switch_1_5_2 (Лестничная площадка)</switch_link>
+            <switch_link>Switch_2_2_1 (Лестница 2-3 этаж, светодиодная подсветка)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_15_08 (Вытяжка. С/У первого этажа)" id="Blower_1_1 (С/У 1 этажа)" name="Вытяжка. С/У первого этажа" room="С/У 1 этажа">
+            <switch_link>Switch_1_4_2 (С/У 1 этажа, вентиляция)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_15_09 (Вытяжка. Комната отдыха)" id="Blower_1_2 (Комната отдыха)" name="Вытяжка. Комната отдыха" room="Сауна">
+            <switch_link>Switch_1_12_4 (Комната отдыха, вентиляция)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_12 (освещение коридор)" id="Lamp_1_27 (Предбанник, свет)" name="Светильник. Предбанник, свет" room="Сауна">
+            <switch_link>Switch_1_13_2 (Предбанник, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_03 (душевая свет)" id="Lamp_1_28 (Душ, свет)" name="Светильник. Душ" room="Сауна">
+            <switch_link>Switch_1_12_3 (Комната отдыха, душевая свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_1_15_01 (вентилятор душ)" id="Blower_1_5 (Душ, вытяжка)" name="Вытяжка. Душ" room="Сауна">
+            <switch_link>Switch_1_12_4 (Комната отдыха, душевая вентиляция)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_15_11 (Вытяжка. Котельная)" id="Blower_1_4 (Котельная)" name="Вытяжка. Котельная" room="Котельная">
+            <switch_link>Switch_1_14_2 (Котельная, вытяжка)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_05 (Холл 2 этаж, доска)" id="Lamp_2_1 (Холл 2 этажа, доска)" name="Светильник. Холл 2 этажа, освещение доска" room="Холл 2 этажа">
+            <switch_link>Switch_2_1_3 (Холл 2 этажа, доска)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_10 (Холл 2 этажа стена)" id="Lamp_2_1 (Холл 2 этажа, освещение стен)" name="Светильник. Холл 2 этажа, освещение стен" room="Холл 2 этажа">
+            <switch_link>Switch_2_1_4 (Холл 2 этажа, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="" id="Lamp_2_1 (Холл 2 этажа, верхнее освещение)" name="Светильник. Холл 2 этажа, верхний свет" room="Холл 2 этажа">
+            <switch_link>Switch_2_1_5 (Холл 2 этажа, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_10 (Малый с/у потолок)" id="Lamp_2_2 (Малый с/у второго этажа, свет)" name="Светильник. Малый с/у второго этажа, свет" room="Малый С/У 2 этажа">
+            <switch_link>Switch_2_3_1 (Малый С/У, 2 этаж, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_04 (Большой с/у, верхний свет)" id="Lamp_2_4 (Большой с/у второго этажа)" name="Светильник. Большой с/у второго этажа" room="Большой С/У 2 этажа">
+            <switch_link>Switch_2_4_1 (Большой С/У, 2 этаж, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_01 (Ванная верхний свет)" id="Lamp_2_4_1 (Большой С/У, 2 этаж, зеркало)" name="Светильник. Большой с/у второго этажа зеркало" room="Ванная комната 2 этажа">
+            <switch_link>Switch_2_4_2 (Большой С/У, 2 этаж, зеркало)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_01 (Ванная верхний свет)" id="Lamp_2_5 (Ванная комната второго этажа, свет)" name="Светильник. Ванная комната второго этажа, свет" room="Ванная комната 2 этажа">
+            <switch_link>Switch_2_5_1 (Ванная комната, 2 этаж, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_09 (Гостевой с/у потолок)" id="Lamp_2_7 (Гостевая ванная комната второго этажа)" name="Светильник. Гостевая ванная комната второго этажа" room="Гостевая комната 2 этажа">
+            <switch_link>Switch_2_6_1 (Гостевая ванная комната, 2 этаж, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_03 (Спальня потолок)" id="Lamp_2_9 (Спальня, верхний свет)" name="Светильник. Спальня, верхний свет" room="Спальня">
+            <switch_link>Switch_2_7_1 (Спальня, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_04 (Светильник. Спальня, боковой свет)" id="Lamp_2_10 (Спальня, боковой свет)" name="Светильник. Спальня, боковой свет" room="Спальня">
+            <switch_link>Switch_2_7_2 (Спальня, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_12 (Гостевая комната)" id="Lamp_2_11 (Гостевая комната, верхний свет)" name="Светильник. Гостевая комната, верхний свет" room="Гостевая комната">
+            <switch_link>Switch_2_8_1 (Гостевая комната, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_14 (Гостевая комната, стена)" id="Lamp_2_12 (Гостевая комната, боковой свет)" name="Светильник. Гостевая комната, боковой свет" room="Гостевая комната">
+            <switch_link>Switch_2_8_2 (Гостевая комната, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_04 (Катина комната)" id="Lamp_2_13 (Катина комната, верхний свет)" name="Светильник. Катина комната, верхний свет" room="Катина комната">
+            <switch_link>Switch_2_9_1 (Катина комната, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_23_02 (Светильник. Катина комната, боковой свет)" id="Lamp_2_14 (Катина комната, боковой свет)" name="Светильник. Катина комната, боковой свет" room="Катина комната">
+            <switch_link>Switch_2_9_2 (Катина комната, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_09 (Степина комната)" id="Lamp_2_15 (Степина комната, верхний свет)" name="Светильник. Степина комната, верхний свет" room="Степина комната">
+            <switch_link>Switch_2_10_1 (Степина комната, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_01 (Степина комната, карта)" id="Lamp_2_16 (Степина комната, боковой свет)" name="Светильник. Степина комната, боковой свет" room="Степина комната">
+            <switch_link>Switch_2_10_2 (Степина комната, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_11 (Гришина комната потолок)" id="Lamp_2_17 (Гришина комната, верхний свет)" name="Светильник. Гришина комната, верхний свет" room="Гришина комната">
+            <switch_link>Switch_2_11_1 (Гришина комната, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_13 (Гришина комната, подсветка гитар)" id="Lamp_2_18 (Гришина комната, боковой свет)" name="Светильник. Гришина комната, боковой свет" room="Гришина комната">
+            <switch_link>Switch_2_11_2 (Гришина комната, боковой свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_14_13 (Светильник. Лестница 2-3 этаж)" id="Lamp_2_19 (Лестница 2-3 этаж)" name="Светильник. Лестница 2-3 этаж" room="Лестница">
+            <switch_link>Switch_2_2_1 (Лестница 2-3 этаж, свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_22_12 (холл 2 этаж потолок)" id="Lamp_2_20 (Холл 2 этажа, верхнее освещение)" name="Светильник. Холл 2 этажа, верхнее освещение" room="Холл 2 этажа">
+            <switch_link>Switch_2_2_2 (Холл 2 этажа, освещение верхнее)</switch_link>
+            <switch_link>Switch_2_1_5 (Холл 2 этажа, верхний свет)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_25_01 (Светильник. Малый с/у второго этажа, свет)" id="Blower_2_1 (Малый с/у второго этажа)" name="Вытяжка. Малый с/у второго этажа" room="Малый С/У 2 этажа">
+            <switch_link>Switch_2_3_2 (Малый С/У, 2 этаж, вентиляция)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_05 (Вентиляция ванная)" id="Blower_2_2 (Ванная второго этажа)" name="Вытяжка. Ванная второго этажа" room="Ванная комната 2 этажа">
+            <switch_link>Switch_2_5_2 (Ванная комната, 2 этаж, вентиляция)</switch_link>
+        </simple_lamp>
+        <simple_lamp contact_link="OUT_RS_2_26_11 (Гостевой с/у вентиляция)" id="Blower_2_3 (Гостевая ванная второго этажа)" name="Вытяжка. Гостевая ванная второго этажа" room="Гостевая комната 2 этажа">
+            <switch_link>Switch_2_6_2 (Гостевая ванная комната, 2 этаж, вентиляция)</switch_link>
+        </simple_lamp>
+        <dimmer_lamp contact_link="OUT_RS_1_12_02" id="LD_1" channel_link="OUT_DMX_1_12_01" name="dimmable lamp" room="living room">
+            <switch_link></switch_link>
+            <switch_link>L_1</switch_link>
+        </dimmer_lamp>
+        <color_lamp channel_AMBER_link="OUT_DMX_1_12_08" contact_link="OUT_RS_1_12_02" id="LC_1" channel_UV_link="OUT_DMX_1_12_09" channel_BLUE_link="OUT_DMX_1_12_05" name="color lamp" room="living room" channel_RED_link="OUT_DMX_1_12_04" channel_WHITE_link="OUT_DMX_1_12_07" channel_GREEN_link="OUT_DMX_1_12_06">
+            <switch_link>LD_1</switch_link>
+        </color_lamp>
+    </logic>
+</smart_house>
